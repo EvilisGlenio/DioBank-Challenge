@@ -1,5 +1,6 @@
 import { CompanyAccount } from "./class/CompanyAccount";
 import { PeopleAccount } from "./class/PeopleAccount";
+import { StudentAccount } from "./class/StudentAccount";
 
 // User
 const peopleAccount: PeopleAccount = new PeopleAccount(
@@ -18,3 +19,8 @@ companyAccount.withdraw(20);
 console.log(companyAccount.getBalance());
 companyAccount.getLoan(2000);
 console.log(companyAccount.getBalance());
+
+// Student
+const studentAccount: StudentAccount = new StudentAccount("Raíssa", 20231203);
+studentAccount.deposit(90);
+console.log(studentAccount.getBalance());

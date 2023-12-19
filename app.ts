@@ -16,3 +16,5 @@ const companyAccount: CompanyAccount = new CompanyAccount("DIO", 20231202);
 companyAccount.deposit(80);
 companyAccount.withdraw(20);
 console.log(companyAccount.getBalance());
+companyAccount.getLoan(2000);
+console.log(companyAccount.getBalance());

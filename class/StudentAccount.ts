@@ -5,9 +5,11 @@ export class StudentAccount extends DioAccount {
     super(name, accountNumber);
   }
 
-  deposit = (newBalance: number): void => {
-    if (this.validateStatus()) {
-      this.balance += newBalance + 10;
-    }
+  studentDeposit = (newAport: number): void => {
+    return this.deposit(newAport + 10);
+  };
+
+  showBalance = (): void => {
+    console.log(`Saldo: ${this.getBalance()}`);
   };
 }

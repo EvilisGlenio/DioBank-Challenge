@@ -11,4 +11,8 @@ export class CompanyAccount extends DioAccount {
       console.log(`Emprestimo de ${loan} aprovado!`);
     }
   };
+
+  showBalance = (): void => {
+    console.log(`Saldo: ${this.getBalance()}`);
+  };
 }
